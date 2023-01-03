@@ -37,7 +37,7 @@ const Country = () => {
             <button className='btn'>
               <Link to="/">Back Home</Link>
             </button>
-            <h1>Country Data</h1>
+            <h1 className='top'>Country Data</h1>
 
             {
              country.map((country, index)=>(

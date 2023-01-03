@@ -1,13 +1,185 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width:1140px;
+  padding:0px 15px;
+  margin:auto !important;
 }
+
+body{
+  padding: 20px;
+  background-color: #202d36;
+}
+
+.header{
+  width:100%;
+  height:70px;
+  line-height: 70px;
+  position:fixed;
+  top:0;
+  left:0;
+  background: #2b3743;;
+}
+
+.header h5{
+  display:flex;
+  align-items: center;
+  font-size:1.3rem;
+  color:#fff;
+}
+
+.countries_bottom{
+  display:flex;
+  flex-wrap:wrap;
+  column-gap:2rem;
+  row-gap:2rem;
+}
+
+.countries_card{
+  width:250px;
+  border-radius: 5px;
+  background-color: #2b3743;
+  color:#fff;
+}
+
+.countries_img img{
+  width:100%;
+  height:150px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.countries_wrapper{
+  margin-top:100px;
+}
+
+.countries_data{
+  padding:20px;
+}
+
+
+.countries_data h3{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.countries_data h4{
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.countries_bottom h4{
+  color:#fff;
+  margin-top: 15px;
+}
+
+input{
+  padding:7px 25px;
+  color:#fff;
+  border-radius:5px;
+  background: #2b3743;
+  border:none;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+::placeholder{
+  color:#fff;
+}
+
+.countries_top{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+
+select{
+  padding:10px 25px;
+  background:#2b3743;
+  margin-bottom: 50px;
+  border:none;
+  outline:none;
+  border-radius: 5px;
+  color:#fff;
+  cursor: pointer;
+}
+
+.option{
+  cursor: pointer;
+}
+
+.btn{
+  background-color: #05121f;
+  cursor: pointer;
+  padding:5px;
+  text-decoration: none;
+  color:#fff;
+  border:2px solid #05121f;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  width:120px;
+
+}
+
+.btn:hover{
+  background-color: #85c2fe;
+  border:2px solid #05121f;
+}
+
+.btn-light{
+  background-color: #2b3743;
+  border:2px solid #2b3743;
+}
+
+.country_info_wrapper{
+  margin-top:120px;
+}
+
+.country_info_container{
+  margin-top:30px;
+  display:flex;
+  column-gap: 3rem;
+}
+
+.country_info_img, 
+.country_info{
+  width:50%;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+.country_info h1{
+  color:#fff;
+}
+
+
+.country_info h3{
+  color:white;
+  font-size:0.9rem;
+  margin-bottom: 30px;
+}
+.country_info_left h5{
+  color:#fff;
+  font-size:0.9rem;
+  font-weight:400;
+  margin-bottom: 10px;;
+}
+
+
+.country_info_left h5 span{
+ color:white;
+ opacity:85%;
+ font-weight:400;
+}
+
+
+

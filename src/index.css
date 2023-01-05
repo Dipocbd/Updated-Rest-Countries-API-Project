@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+  transition: all 400ms ease;
+}
+
 .container{
   width:1140px;
   padding:0px 15px;
@@ -22,7 +27,8 @@ body{
   position:fixed;
   top:0;
   left:0;
-  background: #2b3743;;
+  background: #2b3743;
+  z-index: 1000;
 }
 
 .header h5{

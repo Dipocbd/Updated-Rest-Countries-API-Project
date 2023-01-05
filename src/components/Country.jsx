@@ -51,14 +51,14 @@ const Country = () => {
                 <h1>{country.name.official}</h1>
                 <div className='country_info_left'>
                 <h5>Population:<span>{new Intl.NumberFormat().format(country.population)}</span></h5>
-                <h5>Region:<span>{country.region}</span></h5>
-                <h5> Sub Region: <span>{country.subregion}</span></h5>
-                <h5> Capital: <span>{country.capital}</span></h5>
-                {/* <h5> Top Level Domain: <span>{country.opLevelDomain}</span></h5> */}
-                <h5> Currencies: <span>{country.currencies.name}</span></h5>
-                <h5> Languages: <span>{country.languages.fra}</span></h5>
-                <h5> Border: <span>{country.borders}</span></h5>
-                <h5> TimeZones: <span>{country.timezones}</span></h5>
+                <h5>Region:<span>{country?.region}</span></h5>
+                <h5> Sub Region: <span>{country?.subregion}</span></h5>
+                <h5> Capital: <span>{country?.capital}</span></h5>
+                <h5> Top Level Domain: <span>{country.tld}</span></h5>
+                <h5> Currencies: <span>{Object.keys(country?.currencies)}</span></h5>
+                <h5> Languages: <span>{Object.keys(country?.languages).map((elem)=> <span key={elem}>{elem}, </span>)}</span></h5>
+                <h5> Border: <span>{country?.borders.map((border)=>{return <span key={border}><span>{border},</span> </span>})}</span></h5>
+                <h5> TimeZones: <span>{country?.timezones}</span></h5>
 
 
                 
